@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".oddoneout">
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/counttime"
+        android:gravity="left"
+        android:text="SCORE: 0"
+        android:textSize="32dp"
+        app:fontFamily="@font/baloo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/counttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@id/score"
+        android:gravity="right"
+        android:text="TIMER:0"
+        android:textSize="32dp"
+        app:fontFamily="@font/baloo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginBottom="531dp"
+        android:background="#196807"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="145dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:text="SUBMIT"
+        android:textSize="25sp"
+        app:backgroundTint="#610D67"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="136dp"
+        android:background="#196807"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+</androidx.constraintlayout.widget.ConstraintLayout>
